@@ -1,0 +1,37 @@
+<view class="mine_head">
+
+<view class="list_top">
+  <view class="my-item mylist back">
+    <view class="myitem-name flex-item" bindtap="fill_table">
+      <text>填写表格</text>
+      <text class="fa fa-angle-right fa-2x"></text>
+    </view>
+  </view>
+  <view class="my-item mylist back">
+    <view class="myitem-name flex-item" bindtap="filled_tables">
+      <text>已填写</text>
+      <text class="fa fa-angle-right fa-2x"></text>
+    </view>
+  </view>
+  <view class="my-item mylist back" bindtap="published">
+    <view class="myitem-name flex-item">
+      <text>已发布</text>
+      <text class="fa fa-angle-right fa-2x"></text>
+    </view>
+  </view>
+  <view class="my-item mylist back">
+    <view class="myitem-name flex-item" bindtap="personalCenter">
+      <text>个人中心</text>
+      <text class="fa fa-angle-right fa-2x"></text>
+    </view>
+  </view>
+  <view class="my-item mylist back">
+    <view class="myitem-name flex-item" bindtap="exit_account">
+      <text>退出账号</text>
+      <text class="fa fa-angle-right fa-2x"></text>
+    </view>
+  </view>
+  
+</view>
+
+</view>

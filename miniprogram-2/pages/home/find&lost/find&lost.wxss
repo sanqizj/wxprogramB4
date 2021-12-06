@@ -1,0 +1,125 @@
+page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar{
+    flex: none;
+    display: flex;
+    background: #fff;
+  }
+  .navbar .item{
+    position: relative;
+    flex: auto;
+    text-align: center;
+    line-height: 80rpx;
+  }
+  .navbar .item.active{
+    color: #FFCC00;
+  }
+  .navbar .item.active:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rpx;
+    background: #FFCC00;
+  }
+  
+  .swiperScroll{
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .swiperScroll .orderBox{
+    width: 100%;
+    height: 200rpx;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+  }
+  .swiperScroll .orderBox image{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 0 20rpx;
+  }
+   .orderInfoView{
+    font-size: 32rpx;
+    color:#888888;
+    flex-grow: 1;
+  }
+  .orderInfoView>view:nth-of-type(1){
+    margin-top: 25rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+  }
+  .orderInfoView>view:nth-of-type(2){
+    height: 70rpx;
+    line-height: 70rpx;
+    justify-content: space-between;
+    padding: 0 25rpx;
+    display: flex;
+  }
+  .swiperScroll .orderBox>view button{
+    width: 150rpx;
+    height: 50rpx;
+    display: inline-block;
+    font-size: 30rpx;
+    padding: 0;
+    margin: 0;
+    line-height: 50rpx;
+    margin-top: 20rpx;
+    background: #2d78f4;
+    color:white;
+  }  
+
+  .weui-search-bar {
+    position: relative;
+    padding: 8px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    border-top: 1rpx solid #D7D6DC;
+    border-bottom: 1rpx solid #D7D6DC;
+  }
+  .weui-icon-search_in-box {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+  }
+  .weui-search-bar__form {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+            flex: auto;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1rpx solid #E6E6EA;
+  }
+  .weui-search-bar__box {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .weui-search-bar__input {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .weui-search-bar__cancel-btn {
+    margin-left: 10px;
+    line-height: 28px;
+    color: #3e4550;
+    white-space: nowrap;
+  }
