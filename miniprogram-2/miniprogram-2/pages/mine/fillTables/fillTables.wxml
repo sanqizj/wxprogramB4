@@ -1,0 +1,9 @@
+<view class="add-image">
+    <view class="img_item" wx:if="{{imagesShow.length>=0}}" wx:for="{{imagesShow}}" wx:for-item="item" wx:key="image">
+      <image class="img_item_i"data-index="{{index}}" data-src="{{item}}" src="{{item}}" bindtap="clickImage"></image>
+      <image class="delete-image" data-index="{{index}}" src="/img/deletePhoto.png" bindtap="deleteImage"></image>
+    </view>
+    <view class="img_item" wx:if="{{imagesShow.length<count}}">
+      <image class="add_icon"src="/img/addPhoto.png" bindtap="chooseImage"></image>
+    </view>
+  </view>

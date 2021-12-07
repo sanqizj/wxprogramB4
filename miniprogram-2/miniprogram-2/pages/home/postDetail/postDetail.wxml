@@ -1,0 +1,29 @@
+<view class="postdetails">
+ <view class="postdetails_topic">
+  <label class="postLab">主题：</label>
+  <text class="content">{{postInfo.topic}}</text>
+ </view>
+
+ <view class="postdetails_time">
+  <label class="postLab">时间：</label>
+  <text class="content">{{postInfo.time}}</text>
+ </view>
+
+ <view class="postdetails_place">
+  <label class="postLab">地点：</label>
+  <text class="content">{{postInfo.place}}</text>
+ </view>
+
+ <view class="postdetails_detail">
+  <label class="detail_postLab">详情：</label>
+  <text class="detailContent">{{postInfo.detail}}</text>
+ </view>
+
+ <view class="image">
+  <image class="postImage" src="{{postInfo.imgSrc}}" mode="widthFix"></image>
+ </view>
+
+ <view class="changeable" hidden="{{!changeable}}">
+  <button class="changeButton" bindtap="changePost">编辑帖子</button>
+ </view>
+</view>
